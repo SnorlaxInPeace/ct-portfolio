@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Page Title</title>
 </head>
 
-              <!-- HEADER -->
+<body>
+
+  <!-- HEADER -->
   <header>
-    <div class="logo">Alessio's Portfolio</div>
+    <div class="logo">SnorlaxInPeace's Portfolio</div>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Gallery</a>
+      <a href="#" id="gallery-link">Gallery</a>
       <a href="#">About</a>
     </nav>
   </header>
 
-            <!-- TITLE -->
+  <!-- TITLE -->
   <main>
     <div class="page-title">
       <h1>My Computer Tech Journey</h1>
       <p>Feel Free to Look Around!</p>
     </div>
 
-                  <!-- BACKGROUND OCEAN IMAGE -->
+    <!-- BACKGROUND OCEAN IMAGE -->
+    <div class="ocean-background-image"></div>
 
-<div class="ocean-background-image"></div>
+    <!-- PROFILE IMAGE -->
+    <div class="profile">
+      <div class="circle">
+        <img src="ChatGPT Image Mar 26, 2026, 05_47_00 PM.png" alt="Profile Picture">
+      </div>
 
-          <!-- PROFILE IMAGE -->
-      <div class="profile">
-          <div class="circle">
-            <img src="ChatGPT Image Mar 26, 2026, 05_47_00 PM.png" alt="Profile Picture">
-          </div>
-      
-
-                       <!-- PROFILE DESCRIPTION -->
-         
-    <div class="Profile-Description">
-          <h2>Alessio's Computer Tech Journey</h2>
-          <p>This is a catalog for all of the computer technology projects and experiences I've worked on.</p>
-        </div>
-    </div>  
+      <!-- PROFILE DESCRIPTION -->
+      <div class="Profile-Description">
+        <h2>SnorlaxInPeace's Computer Tech Journey</h2>
+        <p>This is a catalog for all of the computer technology projects and experiences I've worked on.</p>
+      </div>
+    </div>
 
     <!-- PROJECTS GRID -->
+    <div class="projects-grid" id="gallery">
 
-    <div class="projects-grid">
+      <div class="project-box">
+        <div class="box-image" <a
+          href="file:///Users/alessionapoli/Documents/GitHub/project-1-website/project-1-website.html">
+          <img src="Screenshot 2026-03-30 at 12.10.27 pm.png"> </a>
+        </div>
+        <p>Website Design</p>
+      </div>
 
-  <div class="project-box">
-    <div class="box-image" style="background-image: url('image1');"></div>
-    <p>Website Design</p>
-  </div>
+      <div class="project-box">
+        <div class="box-image" style="background-image: url('image2');"></div>
+        <p>Project Two</p>
+      </div>
 
-  <div class="project-box">
-    <div class="box-image" style="background-image: url('image2');"></div>
-    <p>Project Two</p>
-  </div>
+      <div class="project-box">
+        <div class="box-image" style="background-image: url('image3');"></div>
+        <p>Project Three</p>
+      </div>
 
-  <div class="project-box">
-    <div class="box-image" style="background-image: url('image3');"></div>
-    <p>Project Three</p>
-  </div>
+      <div class="project-box">
+        <div class="box-image" style="background-image: url('image4');"></div>
+        <p>Project Four</p>
+      </div>
 
-  <div class="project-box">
-    <div class="box-image" style="background-image: url('image4);"></div>
-    <p>Project Four</p>
-  </div>
+    </div>
 
-</div>
+  </main>
 
-     </main>
- 
-      <!-- FOOTER -->
-
-  <footer> 
-    <div class="footer">Alessio's Portfolio Footer</div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer">SnorlaxInPeace's Portfolio</div>
     <nav>
-      <a href="#">Figure out what to put here later</a>
-      <a href="#">Figure out what to put here later</a>
-      <a href="#">Figure out what to put here later</a>
+      <a href="#" id="back-to-top">Back to Top</a>
+      <a href="#" id="home-link">Home</a>
+      <a href="#">About</a>
     </nav>
-    <small>Alessio's Portfolio Footer</small>
   </footer>
 
+  <!-- JAVASCRIPT FOR SCROLLING THINGIES -->
+  <script>
+    document.getElementById('gallery-link').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('gallery').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.getElementById('home-link').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
+
 </html>
