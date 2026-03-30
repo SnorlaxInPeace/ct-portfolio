@@ -158,6 +158,8 @@ footer small {
   overflow: hidden;
   transition: transform 0.25s ease;
   cursor: pointer;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 
@@ -166,6 +168,7 @@ footer small {
   height: 220px;
   background-size: cover;
   background-position: center;
+  object-fit: contain;
 }
 
 
