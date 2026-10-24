@@ -10,81 +10,96 @@
 
 <body>
 
-    <img src="image1" alt="" class="side-image left">
-    <img src="image2" alt="" class="side-image right">
-
     <!-- HEADER -->
     <header>
         <div class="logo">SnorlaxInPeace's Portfolio</div>
         <nav>
-            <a href="https://snorlaxinpeace.github.io/ct-portfolio/">Home</a>
-            <a href="https://snorlaxinpeace.github.io/ct-portfolio/">Gallery</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#about">About</a>
         </nav>
     </header>
 
+    <!-- TITLE -->
+    <div class="banner">
+        <h1>My First Project</h1>
+        <p>My CT Portfolio</p>
+    </div>
+
     <main>
 
-        <!-- PAGE TITLE -->
-        <div class="page-title">
-            <h1>My First Project</h1>
-            <p>My CT Portfolio</p>
-        </div>
-
-        <!-- ROW 1: image left, bubble right -->
-        <div class="picture-row">
+        <!-- SECTION 1 -->
+        <div class="section">
             <img src="HomepageImage.png" alt="Project image 1">
-            <div class="bubble">
+            <div class="text">
                 <h2>About This Project</h2>
                 <p>This was my first Computer Technology project in which I had to design the first version of the
-                    webpage you are reading this on now.
-                </p>
+                    webpage you are reading this on now.</p>
             </div>
         </div>
 
-        <!-- ROW 2: image right, bubble left -->
-        <div class="picture-row reverse">
+        <!-- SECTION 2 (flipped) -->
+        <div class="section flip">
             <img src="IMAGE1.png" alt="Project image 2">
-            <div class="bubble">
+            <div class="text">
                 <h2>My Issues and Experience</h2>
                 <p>This website is a collection of all the skills of coding in HTML and CSS throughout this first term
-                    of
-                    computer tech. I developed the site around my love for surfing, so I had a clear image of what I
-                    wanted it to look like. I also organised a wireframe blueprint
-                    for my website before I started coding, which made the process much easier by breaking the webpage
-                    into boxes.</p>
+                    of computer tech. I developed the site around my love for surfing, so I had a clear image of what I
+                    wanted it to look like. I also organised a wireframe blueprint for my website before I started
+                    coding, which made the process much easier by breaking the webpage into boxes.</p>
                 <p>The hardest part of the project was learning all of the CSS properties and how to use them. I had to
-                    do a lot of research and trial and error to figure out how to
-                    make the website look the way I wanted it to. I also had to learn how to keep on coming back to
-                    flexbox to make sure everything worked well together.</p>
-                </p>
+                    do a lot of research and trial and error to figure out how to make the website look the way I wanted
+                    it to. I also had to learn how to keep on coming back to flexbox to make sure everything worked well
+                    together.</p>
             </div>
         </div>
 
-        <!-- ROW 3: image left, bubble right -->
-        <div class="picture-row">
+        <!-- SECTION 3 -->
+        <div class="section">
             <img src="SpreadysheetPHOTO.png" alt="Project image 3">
-            <div class="bubble">
-                <h2>Tools and Reflections</h2>
-                <p>
-                    Throughout the project I used a range of tools like Visual Studio
-                    Code, Sublime Text, Git and GitHub, most of which I had used before. I also used Claude Code and my
-                    father helped me to review my code
-                    and catch any obvious errors, but not to write anything for me. It was useful for spotting small
-                    mistakes I had looked past, especially when I had someone to rubber duck with.
-                </p>
-                <p>
-                    But there is still a lot I want to improve about the site going in the future. The main thing is
-                    adding
-                    way more JavaScript to make the site more fun to play with and be on. I also want to add things like
-                    a working nav menu on mobile or small
-                    animations that make it feel like somebody really put effort into it. Additionally looking back at
-                    my CSS it is very bloated and could definently be cut down. Finally, there are also a few sections
-                    I ran out of time to finish properly, and just optional parts that would make the design nicer
-                    overall. But overall I am really happy with how it turned out and I am excited to keep improving it
-                    as I learn more and practice.
+            <div class="text">
+                <h2@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+                    body { font-family: Georgia, serif; background: #f7f0de; color: #3a2328; margin: 0; } h1, h2, .logo,
+                    .title span { font-family: 'Playfair Display' , serif; } /* HEADER */ header { background: #5c1626;
+                    border-bottom: 3px solid #c9a24a; height: 65px; padding: 0 40px; display: flex; align-items: center;
+                    justify-content: space-between; position: sticky; top: 0; z-index: 1000; } .logo { font-size: 22px;
+                    font-weight: 700; color: #c9a24a; } nav a { color: #f7f0de; margin-left: 24px; text-decoration:
+                    none; } nav a:hover { color: #c9a24a; } /* MAIN */ main { max-width: 1000px; margin: 0 auto;
+                    padding: 0 24px 80px; } /* TITLE */ .title { padding: 80px 0 50px; text-align: center;
+                    border-bottom: 2px solid #c9a24a; margin-bottom: 64px; } .title span { color: #c9a24a; font-size:
+                    22px; font-weight: 700; } .title h1 { color: #5c1626; font-size: 50px; margin: 8px 0; } .title p {
+                    margin: 0; font-style: italic; } /* SECTIONS */ .section { display: flex; align-items: center; gap:
+                    40px; margin-bottom: 64px; } .section.flip { flex-direction: row-reverse; } .section img { width:
+                    45%; border-radius: 16px; border: 4px solid #c9a24a; box-shadow: 0 10px 30px rgba(92, 22, 38, 0.15);
+                    } .text { flex: 1; background: #fffaf0; border-left: 5px solid #5c1626; border-radius: 12px;
+                    padding: 28px 32px; box-shadow: 0 10px 30px rgba(92, 22, 38, 0.08); } .text h2 { color: #5c1626;
+                    font-size: 26px; margin: 0 0 12px; } .text p { line-height: 1.75; } /* PREVIOUS / NEXT */
+                    .page-links { display: flex; justify-content: space-between; gap: 16px; padding-top: 20px; }
+                    .page-links a { background: #5c1626; color: #f7f0de; text-decoration: none; border-radius: 30px;
+                    padding: 14px 26px; } .page-links a:hover { background: #c9a24a; color: #5c1626; } /* FOOTER */
+                    footer { background: #5c1626; border-top: 3px solid #c9a24a; padding: 32px 40px; display: flex;
+                    justify-content: space-between; align-items: center; } /* PHONES */ @media (max-width: 700px) {
+                    header { padding: 0 16px; } footer { padding: 24px 16px; flex-direction: column; gap: 12px; } .logo
+                    { font-size: 17px; } nav a { margin-left: 12px; font-size: 14px; } .title h1 { font-size: 34px; }
+                    .section, .section.flip { flex-direction: column; } .section img { width: 100%; } .page-links {
+                    flex-direction: column; text-align: center; } }>Tools and Reflections</h2>
+                    <p>Throughout the project I used a range of tools like Visual Studio Code, Sublime Text, Git and
+                        GitHub, most of which I had used before. I also used Claude Code and my father helped me to
+                        review my code and catch any obvious errors, but not to write anything for me. It was useful for
+                        spotting small mistakes I had looked past, especially when I had someone to rubber duck with.
+                    </p>
+                    <p>But there is still a lot I want to improve about the site going in the future. The main thing is
+                        adding way more JavaScript to make the site more fun to play with and be on. I also want to add
+                        things like a working nav menu on mobile or small animations that make it feel like somebody
+                        really put effort into it. Additionally looking back at my CSS it is very bloated and could
+                        definently be cut down. Finally, there are also a few sections I ran out of time to finish
+                        properly, and just optional parts that would make the design nicer overall. But overall I am
+                        really happy with how it turned out and I am excited to keep improving it as I learn more and
+                        practice.</p>
             </div>
         </div>
+
+        <a href="project-2-website.html" class="next">Next Project →</a>
 
     </main>
 
@@ -93,8 +108,8 @@
         <div class="footer-logo">SnorlaxInPeace's Portfolio</div>
         <nav>
             <a href="#" id="back-to-top">Back to Top</a>
-            <a href="https://snorlaxinpeace.github.io/ct-portfolio/" id="home-link">Home</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
         </nav>
     </footer>
 

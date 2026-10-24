@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Information Display</title>
+    <link rel="stylesheet" href="project-3-website.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">&gt; SnorlaxInPeace</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- TITLE -->
+        <div class="title">
+            <span>03</span>
+            <h1>Arduino Information Display – Reflection</h1>
+            <p>My CT Portfolio</p>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <p>For this project, I created an information display using an Arduino, a TFT screen and a Python
+                    program. My display shows the current time, date, temperature in Celsius and the S&amp;P 500 value
+                    converted into Australian dollars. Python gets the information from online APIs and sends it to the
+                    Arduino through a serial connection. The Arduino then separates the information and displays each
+                    part in a different position on the screen.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <p>One part that went well was getting the communication between Python and the Arduino working. I also
+                    improved the design by using different fonts, a border and a line to separate the information. I
+                    added a night mode that changes the screen to dimmer colours between 10pm and 6am, making it less
+                    bright at night. The text positions are also calculated from the screen size rather than being
+                    completely fixed. This makes the program more flexible if the screen size changes.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <p>The most difficult part was getting the S&amp;P 500 data to work correctly and converting it to AUD.
+                    I used an unofficial Yahoo Finance endpoint, which has no stability guarantees and can have rate
+                    limits. Because of this, I only request the weather and financial data every five minutes rather
+                    than constantly making API requests. I also used a browser-style User-Agent header because Yahoo may
+                    reject requests without one. I used the S&amp;P 500 value and the AUD/USD exchange rate to calculate
+                    an approximate Australian dollar value. I added error handling so that if an API request fails, the
+                    program keeps displaying the last successful values instead of stopping completely.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <p>Through this project, I learned more about APIs, JSON data, Python requests, serial communication and
+                    designing for hardware limitations. I also learned that external services can have restrictions that
+                    need to be considered when writing a program. Another thing I learned was that small design choices,
+                    such as only redrawing when the message changes and using a night mode, can make a device more
+                    practical. If I improved the project, I would use a more reliable financial data source and add more
+                    useful information or visual features. Overall, the project showed me how software, online data and
+                    hardware can work together to create a useful system.</p>
+            </div>
+        </div>
+
+        <!-- PREVIOUS / NEXT -->
+        <div class="page-links">
+            <a href="project-2-website.html">← Previous: Data Analysis</a>
+            <a href="index.html#gallery">All Projects →</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="logo">&gt; SnorlaxInPeace</div>
+        <nav>
+            <a href="#" id="back-to-top">Back to Top</a>
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById('back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
